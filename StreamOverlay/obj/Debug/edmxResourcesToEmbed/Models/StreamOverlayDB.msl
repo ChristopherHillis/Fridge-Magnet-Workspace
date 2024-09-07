@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StreamOverlayModelStoreContainer" CdmEntityContainer="StreamOverlayEntities">
+    <EntitySetMapping Name="OveralyDatas">
+      <EntityTypeMapping TypeName="StreamOverlayModel.OveralyData">
+        <MappingFragment StoreEntitySet="OveralyData">
+          <ScalarProperty Name="entryID" ColumnName="entryID" />
+          <ScalarProperty Name="jsonData" ColumnName="jsonData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetFirstEntry" FunctionName="StreamOverlayModel.Store.GetFirstEntry" />
+  </EntityContainerMapping>
+</Mapping>

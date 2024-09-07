@@ -1,0 +1,43 @@
+﻿@model IEnumerable<StreamOverlay.Models.OveralyData>
+
+<html>
+
+<head>
+    <script src="https://unpkg.com/konva@8.4.2/konva.min.js"></script>
+    <script src="https://unpkg.com/gifler@0.1.0/gifler.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.3.min.js"></script>
+    <link rel="stylesheet" href="~/Styles/styles.css">
+    <meta charset="utf-8" />
+    <title>John Stream Overlay</title>
+</head>
+
+<body>
+    <input type="file" id="file">
+    <p id="url" hidden></p>
+    <input type="button" id="clearCanvas" name="clearCanvas" value="Clear Canvas">
+    <input type="button" id="addText" name="addText" value="Add Text">
+    <div id="menu">
+        <div>
+            <button id="layerUpBtn">Layer Up</button>
+            <button id="layerDownBtn">Layer Down</button>
+            <button id="moveTopBtn">Top Layer</button>
+            <button id="moveBotBtn">Bottom Layer</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+    </div>
+    <div id="textMenu">
+        <div>
+            <label for="textColourChange">Colour:</label>
+            <input type="color" id="textColourChange" name="textColourChange" value="#000000" style="width: 25px" ;>
+            <button id="deleteTextBtn">Delete</button>
+            <label for="fontSize">Font Size:</label>
+            <input type="text" id="fontSize" name="fontSize" style="width: 25px" ;>
+
+        </div>
+    </div>
+    <div id="container"></div>
+</body>
+
+</html>
+<script src="~/js/Index.min.js"></script>

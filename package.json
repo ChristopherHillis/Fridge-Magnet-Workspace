@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gifler": "^0.1.0",
+    "konva": "^8.4.2"
+  }
+}
